@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    overflow-x: hidden;
+}
+#first{
+    width: 100vw;
+    height: 12vh;
+    background-color:#f4511e;
+}
+#first-1{
+    width: 100vw;
+    height: 12vh;
+    background-color:#f4511e;
+   
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+#second{
+    height: 76vh;
+    width: 6vw;
+    background-color:#f4511e;
+}
+#second-2{
+    height: 76vh;
+    width: 6vw;
+    background-color:#f4511e;
+}
+.body{
+    border: 2px solid black;
+    width: 86.6vw;
+    text-align: center;
+   
+}
+.welcome{
+    font-size: 7vh;
+    font-weight: bolder;
+    color: black;
+}
+.date{
+    color: black;
+}
+.heading{
+    margin-top: 10vh;
+    font-size: 5vh;
+    text-decoration: underline;
+    margin-bottom: 3px;
+    margin-bottom: 3.5vh;
+    color: black;
+}
+#demo{
+    width: 60vw;
+    height: 24vh; 
+    margin: 1px auto;
+    font-size: 5vh;
+    color: black;
+    font-weight: bold;
+  
+}
+#button{
+    margin-top: 4vh;
+    margin-bottom: 3px;
+    padding: 6px;
+    font-size: 3vh;
+    border-radius: 10%;
+}

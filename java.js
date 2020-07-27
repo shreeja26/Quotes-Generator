@@ -67,6 +67,8 @@ mybutton.addEventListener('click', ()=> {
     document.querySelector('#second').style.backgroundColor = colors[i];
     document.querySelector('#first-1').style.backgroundColor = colors[i];
     document.querySelector('#second-2').style.backgroundColor = colors[i];
+    document.querySelector('.body').style.color = colors[i];
+        
     
 });
 

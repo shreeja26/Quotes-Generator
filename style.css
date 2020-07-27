@@ -31,14 +31,14 @@
     border: 2px solid black;
     width: 86.6vw;
     text-align: center;
-    color:#f4511e;
+    color: #f4511e;
    
 }
 .welcome{
     font-size: 7vh;
     font-weight: bolder;
+    
 }
-
 .heading{
     margin-top: 10vh;
     font-size: 5vh;
@@ -52,6 +52,7 @@
     height: 24vh; 
     margin: 1px auto;
     font-size: 5vh;
+    
     font-weight: bold;
   
 }

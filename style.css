@@ -52,10 +52,14 @@
     height: 24vh; 
     margin: 1px auto;
     font-size: 5vh;
-    
     font-weight: bold;
-  
 }
+@media only screen and (max-width: 850px) {
+    #demo{
+       font-size: 3vh;
+    }
+}
+
 #button{
     margin-top: 4vh;
     margin-bottom: 3px;

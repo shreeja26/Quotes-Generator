@@ -1,7 +1,7 @@
 /*
 let geth1 = document.querySelector('.welcome');
 let gettime = document.querySelector('.date');
-/*let newele = document.createElement("h1");*/
+let newele = document.createElement("h1");
 let date = new Date();
 let time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
 let hours = date.getHours();

@@ -1,17 +1,8 @@
-        
-
-
 let geth1 = document.querySelector('.welcome');
 let gettime = document.querySelector('.date');
 /*let newele = document.createElement("h1");*/
 
-var clock = setInterval(settiming, 1000);
-function settiming(){
-    var date = new Date();
-    var time = date.toLocaleTimeString();
-    gettime.innerHTML = time;
-}
-
+var date = new Date();
 let hours = date.getHours();
 let createtext = "";
 if(hours>=4 && hours<10)
@@ -75,3 +66,9 @@ mybutton.addEventListener('click', ()=> {
     
 });
 
+var clock = setInterval(settiming, 1000);
+function settiming(){
+    var date = new Date();
+    var time = date.toLocaleTimeString();
+    gettime.innerHTML = time;
+}

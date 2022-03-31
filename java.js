@@ -1,9 +1,9 @@
         
 
 
-let geth1 = document.querySelector('.welcome');
+/*let geth1 = document.querySelector('.welcome');
 let gettime = document.querySelector('.date');
-/*let newele = document.createElement("h1");*/
+/*let newele = document.createElement("h1");
 
 var clock = setInterval(settiming, 1000);
 function settiming(){
@@ -74,4 +74,72 @@ mybutton.addEventListener('click', ()=> {
     document.querySelector('.body').style.color = colors[i];
     
 });
+*/
+
+
+let geth1 = document.querySelector('.welcome');
+let gettime = document.querySelector('.date');
+/*let newele = document.createElement("h1");*/
+
+var date = new Date();
+let hours = date.getHours();
+let createtext = "";
+if(hours>=4 && hours<10)
+{
+    createtext = "Good Morning";
+}
+else if(hours>=10 && hours<12)
+{
+    createtext = "Good Day";
+}
+else if(hours>=12 && hours<15)
+{
+    createtext = "Good Afternoon";
+}
+else if(hours>=15 && hours<20)
+{
+    createtext = "Good Evening";
+}
+else if(hours>=20 && hours<24)
+{
+    createtext = "Good Night";
+}
+else
+{
+    createtext = "Are you from another planet";
+}
+geth1.innerHTML = createtext;
+
+
+var colors = ["#C2272D", "#F8931F", "#FFFF01", "#009245", "#0193D9", "#0C04ED", "#612F90","#34deeb","#8f2811","#00f7da"];
+var i=0;
+
+
+let quote;
+var mybutton = document.getElementById('button');
+mybutton.addEventListener('click', ()=> {
+    fetch("https://api.quotable.io/random")
+        .then((res) => res.json())
+        .then((data) => {
+            quote = data;
+        });
+
+    document.getElementById("demo").innerHTML = `${quote.content}-${quote.author}`;
+
+    i = i < colors.length ? ++i : 0;
+    document.querySelector('#first').style.backgroundColor = colors[i];
+    document.querySelector('#second').style.backgroundColor = colors[i];
+    document.querySelector('#first-1').style.backgroundColor = colors[i];
+    document.querySelector('#second-2').style.backgroundColor = colors[i];
+    document.querySelector('.body').style.color = colors[i];
+    
+});
+
+var clock = setInterval(settiming, 1000);
+function settiming(){
+    var date = new Date();
+    var time = date.toLocaleTimeString();
+    gettime.innerHTML = time;
+}
+
 
